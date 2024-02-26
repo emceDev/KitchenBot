@@ -10,6 +10,7 @@ import {
 } from "./Pages/utility/Utility";
 import { CreateTask, EditTask, Task } from "./Pages/tasks/Task";
 import { Todo } from "./Pages/Todo/Todo";
+import { JobList } from "./Pages/tasks/components/Jobs";
 
 function App() {
   return (
@@ -21,10 +22,8 @@ function App() {
         <Routes>
           <Route path="/Machine/:m_id/" element={<Machine />}>
             <Route path="UtilityList" element={<UtilityList />} />
-            <Route path="Tasks/:t_id/" element={<Task />}>
-              <Route path="edit" element={<EditTask />} />
-              {/* <Route path=":t_id/" element={<JobList />} /> */}
-            </Route>
+            <Route path="Tasks/:t_id/" element={<Task />} />
+            <Route path="Tasks/:t_id/edit" element={<EditTask />} />
             <Route path="Tasks/create" element={<CreateTask />} />
           </Route>
         </Routes>

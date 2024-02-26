@@ -1,28 +1,3 @@
-import { useEffect, useState } from "react";
-import styles from "./Jobs.module.scss";
-import { useUtilities } from "../../utility/Utility";
-
-export const JobList = ({ jobs, editJob }) => {
-  return (
-    <div className={styles.JobList}>
-      {jobs.map((job, index) => (
-        <>
-          {index}
-          <Job job={job} key={job._id} />
-          {editJob && (
-            <>
-              <button onClick={() => editJob("delete", job._id)}>Delete</button>
-              <button onClick={() => editJob("up", job._id)}>UP</button>
-              <button onClick={() => editJob("down", job._id)}>Down</button>
-              <button>Edit time</button>
-            </>
-          )}
-          <br></br>
-        </>
-      ))}
-    </div>
-  );
-};
 export const AddJob = ({ addJob }) => {
   const [type, setType] = useState(null);
   const [source, setSource] = useState(null);
@@ -32,6 +7,7 @@ export const AddJob = ({ addJob }) => {
   const { data, error, isLoading } = useUtilities();
   const [sourceDropdownShown, setSourceDropdownShown] = useState(true);
   const [destDropdownShown, setDestDropdownShown] = useState(true);
+
   useEffect(() => {
     const newAviaJobArr = [];
     {
@@ -52,7 +28,6 @@ export const AddJob = ({ addJob }) => {
     setAviablejobtypes(newAviaJobArr);
     console.log("add job effect", data);
   }, [data]);
-
   return error ? (
     <>Oh no, there was an error</>
   ) : isLoading ? (
@@ -89,9 +64,7 @@ export const AddJob = ({ addJob }) => {
                 <button
                   onClick={() => setSourceDropdownShown(!sourceDropdownShown)}
                 >
-                  {source !== null
-                    ? data.utilities.find((ut) => ut._id === source).name
-                    : "Utilities"}
+                  {source !== null ? source.name : "Utilities"}
                 </button>
               ) : (
                 <div className={styles.list}>
@@ -99,7 +72,7 @@ export const AddJob = ({ addJob }) => {
                     util.jobType === type ? (
                       <button
                         onClick={() => {
-                          setSource(util._id);
+                          setSource(util);
                           setSourceDropdownShown(false);
                         }}
                       >
@@ -115,8 +88,7 @@ export const AddJob = ({ addJob }) => {
                 <button
                   onClick={() => setDestDropdownShown(!destDropdownShown)}
                 >
-                  {data.utilites !== null &&
-                    data.utilities.find((ut) => ut._id === destination).name}
+                  {destination !== null && destination.name}
                 </button>
               ) : (
                 <div className={styles.Dropdown}>
@@ -127,7 +99,7 @@ export const AddJob = ({ addJob }) => {
                           util.jobType === "stove" && (
                             <button
                               onClick={() => {
-                                setDestination(util._id);
+                                setDestination(util);
                                 setDestDropdownShown(false);
                               }}
                             >
@@ -143,31 +115,19 @@ export const AddJob = ({ addJob }) => {
           </tr>
         </tbody>
       </table>
-      <label>Job type</label>
-      <br></br>
-
       <label>
         Start time
         <input type="time" onChange={(e) => setStartTime(e.target.value)} />
       </label>
+      {source && (
+        <ConfigureUtility
+          utility={source}
+          utilUpdate={(newdata) => setSource(newdata)}
+        />
+      )}
       <button onClick={() => addJob({ type, source, destination })}>
-        add job
+        Add job to task
       </button>
     </div>
   ) : null;
-};
-
-const Job = ({ job }) => {
-  return (
-    <div>
-      type : {job.type}
-      Source: {job.source}
-      destination :{job.destination}
-    </div>
-  );
-};
-const JobEdit = ({ job }) => {};
-
-const configureUtility = ({ utility }) => {
-  return <div>Utility to be configured</div>;
 };
