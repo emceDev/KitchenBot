@@ -1,3 +1,9 @@
+import { useUtilities } from "./hooks";
+import { useState } from "react";
+import { useEditUtilityMutation } from "../../State/services";
+import { Table } from "../components/Table";
+import { useParams } from "react-router-dom";
+import { CreateUtility } from "./CreateUtility";
 export const UtilityList = () => {
   let { m_id } = useParams();
   const { data, error, isLoading } = useUtilities(m_id);
@@ -7,7 +13,7 @@ export const UtilityList = () => {
   const [editUtility] = useEditUtilityMutation();
 
   const handleSave = (newData) => {
-    console.log("saving utilityies");
+    console.log("saving utilities");
     const old = data.utilities;
     if (newData === data.utilities) {
       console.log("equal");

@@ -4,13 +4,8 @@ import {
   useGetMachineByIdQuery,
 } from "../../State/services";
 import { NavLink, Outlet, useParams } from "react-router-dom";
-import {
-  CreateUtility,
-  Utility,
-  UtilityList,
-  useUtilities,
-} from "../utility/Utility";
 import styles from "./Machine.module.scss";
+import { useUtilities } from "../Utility/hooks";
 const xm_id = "64eb29f108d0b25211afc486";
 export const Machine = () => {
   return (

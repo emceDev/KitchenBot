@@ -1,3 +1,6 @@
+import { Job } from "./Job";
+import styles from "./Jobs.module.scss";
+import { EditJob } from "./EditJob";
 export const JobList = ({ jobs, editJob }) => {
   // const [edit, setEdit] = useState(false);
   return (

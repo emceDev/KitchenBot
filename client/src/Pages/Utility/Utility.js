@@ -5,7 +5,7 @@ import {
   useGetUtilityListQuery,
 } from "../../State/services";
 import { useParams } from "react-router-dom";
-import { Table } from "../components/Table";
+import { Table } from "../../components/Misc/Table";
 
 export const Utility = ({ utility }) => {
   const [optionsShown, setOptionsShown] = useState(false);

@@ -1,3 +1,6 @@
+import { useParams } from "react-router-dom";
+import { useGetUtilityListQuery } from "../../State/services";
+
 export const useUtilities = () => {
   let { m_id } = useParams();
   const { data, error, isLoading } = useGetUtilityListQuery(m_id);

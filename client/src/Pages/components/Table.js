@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./table.module.scss";
+
 export const Table = ({ objArr, edit, handleSave, exclude = [] }) => {
   const [objArrState, setObjArrState] = useState(objArr);
   const [changes, setChanges] = useState([]);
