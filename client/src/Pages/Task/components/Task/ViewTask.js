@@ -3,7 +3,7 @@ import { useGetTaskQuery } from "../../../../State/services";
 import { JobList } from "../Jobs/JobList";
 import { Link, Outlet, useParams } from "react-router-dom";
 
-export const Task = () => {
+export const ViewTask = () => {
   let { m_id, t_id } = useParams();
   const [isEditing, setIsEditing] = useState(false);
   const { data, error, isLoading } = useGetTaskQuery({ m_id, t_id });
@@ -17,7 +17,7 @@ export const Task = () => {
       ) : data ? (
         <>
           <label>
-            Name
+            Viewing:
             <p>{task.name}</p>
           </label>
           {/* {!isEditing && <Table objArr={task.jobs} exclude={["_id"]} />} */}

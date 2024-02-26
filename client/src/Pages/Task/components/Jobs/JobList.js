@@ -7,7 +7,7 @@ export const JobList = ({ jobs, editJob }) => {
     <div className={styles.JobList}>
       {jobs.map((job, index) => (
         <>
-          <Job job={job} key={job._id} />
+          {!editJob && <Job job={job} key={job._id} />}
           {editJob && (
             <>
               <EditJob editJob={(x) => editJob(x)} job={job} />

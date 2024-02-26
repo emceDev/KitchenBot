@@ -129,7 +129,9 @@ export const AddJob = ({ addJob }) => {
           utilUpdate={(newdata) => setSource(newdata)}
         />
       )}
-      <button onClick={() => addJob({ type, source, destination })}>
+      <button
+        onClick={() => addJob({ type, source, destination, status: "Created" })}
+      >
         Add job to task
       </button>
     </div>

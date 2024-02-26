@@ -3,7 +3,6 @@ import styles from "./table.module.scss";
 
 export const Table = ({ objArr, edit, handleSave, exclude = [] }) => {
   const [objArrState, setObjArrState] = useState(objArr);
-  const [changes, setChanges] = useState([]);
   // const keys = Object.keys(objArr[0]).filter((key) => !exclude.includes(key));
   const keys = [];
   objArr.map((obj) =>

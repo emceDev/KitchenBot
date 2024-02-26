@@ -63,9 +63,10 @@ export const ConfigureUtility = ({ utility, utilUpdate }) => {
           ))}
         {contents && (
           <>
+            {console.log("contents", contents.name)}
             <input
               type="text"
-              placehoder={contents.name}
+              value={contents.name}
               onChange={(e) =>
                 setContents({ ...contents, name: e.target.value })
               }
