@@ -1,0 +1,16 @@
+.TaskList{
+    display: flex;
+    flex-direction: column;
+}
+.CreateTask{
+    background-color: lightblue;
+}
+.JobUtilContainer{
+    background-color: magenta;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div:first-of-type{
+        // width: 45vw;
+    }
+}

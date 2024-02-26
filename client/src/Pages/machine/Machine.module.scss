@@ -1,0 +1,13 @@
+.MachineNavBar{
+    display: flex;
+    flex-direction: row;
+    .navListContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}.navList{
+    display: flex;
+    flex-direction: column;
+}

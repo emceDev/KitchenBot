@@ -1,0 +1,5 @@
+listen for job from pi
+try to do the job
+listen for commands if not new continue old task:
+    error => signal => wait
+    succes => signal => wait

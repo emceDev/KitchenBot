@@ -1,0 +1,15 @@
+.JobList{
+    display: flex;
+    flex-direction: column;
+   
+}
+.Dropdown{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+}
+.list{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+}
