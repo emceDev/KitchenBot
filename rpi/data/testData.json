@@ -1,0 +1,502 @@
+{
+  "_id": "64ecd9b500c295bc7d36e271",
+  "name": "machine",
+  "password": "passs",
+  "tasks": [
+    {
+      "name": "defaultTask",
+      "status": "Created",
+      "jobs": [
+        {
+          "type": "add",
+          "status": "Created",
+          "source": {
+            "type": "container",
+            "name": "c2",
+            "status": "in use",
+            "position": "2",
+            "options": [
+              {
+                "name": "open via:",
+                "values": ["valve", "gate"],
+                "set": 0,
+                "_id": "6504036182632902745f9184"
+              }
+            ],
+            "jobType": "add",
+            "contents": {
+              "name": "empty",
+              "type": "not assigned",
+              "_id": "6504036182632902745f9185"
+            },
+            "_id": "6504036182632902745f9183"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "s1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65041c4f5b805c9bbbcf9717"
+        },
+        {
+          "type": "add",
+          "status": "Created",
+          "source": {
+            "type": "container",
+            "name": "c3",
+            "status": "in use",
+            "position": "3",
+            "options": [
+              {
+                "name": "open via:",
+                "values": ["valve", "gate"],
+                "set": 1,
+                "_id": "6504036782632902745f9196"
+              }
+            ],
+            "jobType": "add",
+            "contents": {
+              "name": "solid",
+              "type": "peppers",
+              "_id": "6504036782632902745f9197"
+            },
+            "_id": "65041c4f5b805c9bbbcf971e"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "s1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65041c4f5b805c9bbbcf971d"
+        },
+        {
+          "type": "mix",
+          "status": "Created",
+          "source": {
+            "type": "mixer",
+            "name": "Mix1",
+            "status": "in use",
+            "position": "1",
+            "options": [
+              {
+                "name": "speed",
+                "values": ["1", "2", "3", "4"],
+                "set": 2,
+                "_id": "6504033d82632902745f916e"
+              }
+            ],
+            "jobType": "mix",
+            "_id": "65041c4f5b805c9bbbcf9724"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "s1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65041c4f5b805c9bbbcf9723"
+        }
+      ],
+      "_id": "65041c4f5b805c9bbbcf9716"
+    },
+    {
+      "name": "Some task",
+      "status": "Created",
+      "jobs": [
+        {
+          "type": "add",
+          "status": "Created",
+          "source": {
+            "type": "container",
+            "name": "xxx",
+            "status": "in use",
+            "position": "2",
+            "options": [
+              {
+                "name": "open via:",
+                "values": ["valve", "gate"],
+                "set": 0,
+                "_id": "6504036182632902745f9184"
+              }
+            ],
+            "jobType": "add",
+            "contents": {
+              "name": "asdf",
+              "type": "fda",
+              "_id": "6504036182632902745f9185"
+            },
+            "_id": "651fdf901f24daa8fe2a33eb"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "s1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "651fdf901f24daa8fe2a33ea"
+        }
+      ],
+      "_id": "651fdf901f24daa8fe2a33e9"
+    },
+    {
+      "name": "Some taks",
+      "status": "Created",
+      "jobs": [],
+      "_id": "651ff242d6edbf8a3933ca57"
+    },
+    {
+      "name": "make spaggetty",
+      "status": "Created",
+      "jobs": [],
+      "_id": "65dc466091dfd15ff83dd18f"
+    },
+    {
+      "name": "Noodles",
+      "status": "Created",
+      "jobs": [
+        {
+          "type": "add",
+          "status": "Created",
+          "source": {
+            "type": "container",
+            "name": "pojemnik1",
+            "status": "in use",
+            "position": "2",
+            "options": [
+              {
+                "name": "open via:",
+                "values": ["valve", "gate"],
+                "set": 0,
+                "_id": "6504036182632902745f9184"
+              }
+            ],
+            "jobType": "add",
+            "contents": {
+              "name": "noodle",
+              "type": "niewiem",
+              "_id": "6504036182632902745f9185"
+            },
+            "_id": "65dca024e6d147d2d5de1970"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "palnik1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65dca024e6d147d2d5de196f"
+        },
+        {
+          "type": "add",
+          "status": "Created",
+          "source": {
+            "type": "container",
+            "name": "pojemnik2",
+            "status": "in use",
+            "position": "5",
+            "options": [
+              {
+                "name": "open via:",
+                "values": ["valve", "gate"],
+                "set": 0,
+                "_id": "6504037782632902745f91c6"
+              }
+            ],
+            "jobType": "add",
+            "contents": {
+              "name": "woda",
+              "type": "not assigned",
+              "_id": "6504037782632902745f91c7"
+            },
+            "_id": "65dca024e6d147d2d5de1976"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "palnik1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65dca024e6d147d2d5de1975"
+        },
+        {
+          "type": "add",
+          "status": "Created",
+          "source": {
+            "type": "container",
+            "name": "pojemnik z gruszkami",
+            "status": "in use",
+            "position": "4",
+            "options": [
+              {
+                "name": "open via:",
+                "values": ["valve", "gate"],
+                "set": 0,
+                "_id": "6504037082632902745f91ac"
+              }
+            ],
+            "jobType": "add",
+            "contents": {
+              "name": "gruszki",
+              "type": "not assigned",
+              "_id": "6504037082632902745f91ad"
+            },
+            "_id": "65dcadf0e6d147d2d5de1fcb"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "palnik1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65dcadf0e6d147d2d5de1fca"
+        },
+        {
+          "type": "mix",
+          "status": "Created",
+          "source": {
+            "type": "mixer",
+            "name": "rozdrabniacz gruszek",
+            "status": "in use",
+            "position": "13",
+            "options": [
+              {
+                "name": "speed",
+                "values": ["1", "2", "3", "4"],
+                "set": 0,
+                "_id": "65dcaf1de6d147d2d5de20b0"
+              }
+            ],
+            "jobType": "mix",
+            "_id": "65dcaf86e6d147d2d5de2126"
+          },
+          "destination": {
+            "type": "stove",
+            "name": "palnik1",
+            "status": "in use",
+            "position": "10",
+            "options": [
+              {
+                "name": "power",
+                "values": ["1", "2", "3"],
+                "set": 0,
+                "_id": "6504035682632902745f9177"
+              }
+            ],
+            "jobType": "stove",
+            "_id": "6504035682632902745f9176"
+          },
+          "_id": "65dcaf86e6d147d2d5de2125"
+        }
+      ],
+      "_id": "65dca024e6d147d2d5de196e"
+    }
+  ],
+  "utils": [],
+  "__v": 45,
+  "utilities": [
+    {
+      "type": "mixer",
+      "name": "mikser1",
+      "status": "in use",
+      "position": "1",
+      "options": [
+        {
+          "name": "speed",
+          "values": ["1", "2", "3", "4"],
+          "set": 0,
+          "_id": "6504033d82632902745f916e"
+        }
+      ],
+      "jobType": "mix",
+      "_id": "6504033d82632902745f916d"
+    },
+    {
+      "type": "stove",
+      "name": "palnik1",
+      "status": "in use",
+      "position": "10",
+      "options": [
+        {
+          "name": "power",
+          "values": ["1", "2", "3"],
+          "set": 0,
+          "_id": "6504035682632902745f9177"
+        }
+      ],
+      "jobType": "stove",
+      "_id": "6504035682632902745f9176"
+    },
+    {
+      "type": "container",
+      "name": "pojemnik1",
+      "status": "in use",
+      "position": "2",
+      "options": [
+        {
+          "name": "open via:",
+          "values": ["valve", "gate"],
+          "set": 0,
+          "_id": "6504036182632902745f9184"
+        }
+      ],
+      "jobType": "add",
+      "contents": {
+        "name": "empty",
+        "type": "not assigned",
+        "_id": "6504036182632902745f9185"
+      },
+      "_id": "6504036182632902745f9183"
+    },
+    {
+      "type": "container",
+      "name": "pojemnik3",
+      "status": "in use",
+      "position": "3",
+      "options": [
+        {
+          "name": "open via:",
+          "values": ["valve", "gate"],
+          "set": 0,
+          "_id": "6504036782632902745f9196"
+        }
+      ],
+      "jobType": "add",
+      "contents": {
+        "name": "empty",
+        "type": "not assigned",
+        "_id": "6504036782632902745f9197"
+      },
+      "_id": "6504036782632902745f9195"
+    },
+    {
+      "type": "container",
+      "name": "pojemnik4",
+      "status": "in use",
+      "position": "4",
+      "options": [
+        {
+          "name": "open via:",
+          "values": ["valve", "gate"],
+          "set": 0,
+          "_id": "6504037082632902745f91ac"
+        }
+      ],
+      "jobType": "add",
+      "contents": {
+        "name": "empty",
+        "type": "not assigned",
+        "_id": "6504037082632902745f91ad"
+      },
+      "_id": "6504037082632902745f91ab"
+    },
+    {
+      "type": "container",
+      "name": "pojemnik2",
+      "status": "in use",
+      "position": "5",
+      "options": [
+        {
+          "name": "open via:",
+          "values": ["valve", "gate"],
+          "set": 0,
+          "_id": "6504037782632902745f91c6"
+        }
+      ],
+      "jobType": "add",
+      "contents": {
+        "name": "empty",
+        "type": "not assigned",
+        "_id": "6504037782632902745f91c7"
+      },
+      "_id": "6504037782632902745f91c5"
+    },
+    {
+      "type": "mixer",
+      "name": "rozdrabniacz gruszek",
+      "status": "in use",
+      "position": "13",
+      "options": [
+        {
+          "name": "speed",
+          "values": ["1", "2", "3", "4"],
+          "set": 0,
+          "_id": "65dcaf1de6d147d2d5de20b0"
+        }
+      ],
+      "jobType": "mix",
+      "_id": "65dcaf1de6d147d2d5de20af"
+    }
+  ]
+}

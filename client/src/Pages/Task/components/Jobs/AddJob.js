@@ -13,7 +13,7 @@ export const AddJob = ({ addJob }) => {
   const [destDropdownShown, setDestDropdownShown] = useState(true);
 
   useEffect(() => {
-    const newAviaJobArr = [];
+    const newAviaJobArr = ["wait"];
     {
       error ? (
         <>Oh no, there was an error</>
