@@ -12,7 +12,7 @@ const optionSchema = mongoose.Schema({
 const utilitySchema = mongoose.Schema({
   type: { type: String, required: true },
   name: { type: String, required: true },
-  status: { type: String, default: "in use" },
+  status: { type: String, default: "free" },
   position: { type: String, required: true },
   options: [optionSchema],
   jobType: { type: String, required: true },

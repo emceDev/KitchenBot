@@ -7,6 +7,9 @@ export const CreateUtility = ({ m_id }) => {
   const [position, setPosition] = useState(null);
 
   const [createUtility, res] = useCreateUtilityMutation();
+  // limit the types only to stove, container, grabber, mixer.
+  // find meritum between JobType and type (JobType can be set basing on type)
+  // e.g container === add
   return (
     <div>
       <label>
@@ -26,6 +29,7 @@ export const CreateUtility = ({ m_id }) => {
             m_id: m_id,
             name,
             type,
+            jobType: type,
             position,
           })
         }
