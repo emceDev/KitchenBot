@@ -1,11 +1,34 @@
 import asyncio
 import websockets
+from data_handler import load_data
+data=load_data('./data/testData.json')
 
-async def echo(websocket, path):
-    async for message in websocket:
-        await websocket.send(message)
+print(data['tasks'][4]['jobs'][1])
+# Dictionary to store connected clients
+connected_clients = {}
 
-start_server = websockets.serve(echo, "localhost", 8765)
+async def handle_client(websocket, path):
+    # Register the client
+    connected_clients[websocket] = path
+    print(f"Client connected from {path}")
 
-asyncio.get_event_loop().run_until_complete(start_server)
-asyncio.get_event_loop().run_forever()
+    try:
+        # Continuously listen for messages from the client
+        async for message in websocket:
+            print(f"Received message from {path}: {message}")
+            # Echo the received message back to the client
+            await websocket.send(message)
+    except websockets.exceptions.ConnectionClosedOK:
+        # Remove the client from the dictionary when the connection is closed
+        del connected_clients[websocket]
+        print(f"Client {path} disconnected")
+
+async def main():
+    # Start the websocket server
+    async with websockets.serve(handle_client, "localhost", 8765):
+        print("Server started")
+        # Keep the server running indefinitely
+        await asyncio.Future()
+
+# Run the main coroutine
+asyncio.run(main())

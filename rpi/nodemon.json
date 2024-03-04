@@ -1,0 +1,5 @@
+{
+  "watch": ["./modules/ws_test_server.py"],
+  "ext": "py",
+  "exec": "python ./modules/ws_test_server.py"
+}

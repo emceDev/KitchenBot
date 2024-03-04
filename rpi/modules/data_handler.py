@@ -6,6 +6,7 @@ class Utility:
         self.__dict__.update(utility_data)
 
     def connect(self):
+        #search for mac addresses in network
         print('connection established')
 
     def dispatch(self,job):
