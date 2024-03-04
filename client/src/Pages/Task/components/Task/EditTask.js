@@ -74,12 +74,14 @@ export const EditTask = () => {
     return (
       <>
         {/* {console.log(data.jobs)} */}
-        <JobList
-          jobs={jobs}
-          editJob={(j_id) => {
-            editJob(j_id);
-          }}
-        />
+        {jobs && (
+          <JobList
+            jobs={jobs}
+            editJob={(j_id) => {
+              editJob(j_id);
+            }}
+          />
+        )}
         {addJobShown && <AddJob addJob={addJob} />}
         <button onClick={() => setAddJobShown(!addJobShown)}>AddJob</button>
         <button onClick={saveTask}>Save</button>
