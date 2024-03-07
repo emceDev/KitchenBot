@@ -17,6 +17,11 @@ const stove = {
   type: "stove",
   options: [{ name: "power", values: ["1", "2", "3"] }],
 };
+const timer = {
+  jobType: "timer",
+  type: "timer",
+  options: [{ name: "time", values: ["0"] }],
+};
 export const createUtility = asyncHandler(async (req, res) => {
   console.log("Creating an utility...", req.body, req.params);
   try {
@@ -27,7 +32,9 @@ export const createUtility = asyncHandler(async (req, res) => {
         ? mixer
         : req.body.type === "container"
         ? container
-        : req.body.type === "stove" && stove;
+        : req.body.type === "stove"
+        ? stove
+        : req.body.type === "timer" && timer;
     console.log(baseValues);
     const newUtility = parentMachine.utilities.push({
       ...req.body,

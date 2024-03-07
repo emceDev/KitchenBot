@@ -1,0 +1,49 @@
+1.initialize machine:
+    user scans machine via app => it downloads machnine type with default tools,stoves,utils,containers and ?one receipe?
+
+Normal usage:
+1.user fills containers with ingredients
+2.user scans the container qr codes via app and is asked to tell their contents
+    -contents are loaded into the machine to the ids of containers
+
+4.interactive usage
+Container:{
+    contents:{
+        type:solid|fluid|semi-solid|
+        name:string
+        weight:number
+    }
+    number:String
+    
+
+}
+Configure containers:
+    Add container:
+        user is asked via two inputs to tell the contents of container and their weight and id of the container
+    Edit container:
+        containers list with inputs allowing to edit container contents and number
+            
+
+
+
+3. user goes to add receipe page (interactive list of existing receipes with button to add new receipe)
+list of receipes displays receipe, its status, duration, and doability on ingrediends registered
+
+Add receipe component:
+Job add:
+    job list is displayed
+    under it(containers list with their contents names)(non editable)
+        after clicking container stove list appears on the right of the container and user can choose destination (stove) by clicking on it
+        after choosing container it is removed from the list of aviable containers and job is added to the list in such a format (source:container,type:'add',destination:stove)
+        Button DELETE UP DOWN appears at the right of the job allowing from removing the job, or changing its place on the list
+    bottom(buttons MIX,DELAY,ADJUST):
+        after clicking MIX: user is asked for duration and speed, and destination (list of stoves appears) {options:[name:'speed', value:number]}
+        after clicking DELAY: user is asked for duration in tome {jobtype:'delay',duration:number}
+            after inserting save button appears adding job to the list of jobs
+        after clicking ADJUST: user is displayed list of stoves to configure their options)
+Save receipe button
+
+Edit receipe:
+    same as add receipe
+Receipe details:
+    buttons are removed, just display receipe

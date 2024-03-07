@@ -39,13 +39,16 @@ export const UtilityList = () => {
         ) : data.utilities.length > 0 ? (
           <>
             {!editUtilitiesShown ? (
-              <Table objArr={data.utilities} />
+              <Table
+                objArr={data.utilities}
+                exclude={["_id", "options", "jobType"]}
+              />
             ) : (
               <Table
                 objArr={data.utilities}
                 edit={true}
                 handleSave={handleSave}
-                exclude={["_id", "options"]}
+                exclude={["_id", "options", "jobType"]}
               />
             )}
 

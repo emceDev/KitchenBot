@@ -82,8 +82,8 @@ const DestinationSelection = ({
       </div>
     </div>
   );
+
 export const AddJob = ({ addJob }) => {
-  const [type, setType] = useState(null);
   const [source, setSource] = useState(null);
   const [destination, setDestination] = useState(null);
   const [startTime, setStartTime] = useState(null);
@@ -92,6 +92,7 @@ export const AddJob = ({ addJob }) => {
   const [sourceDropdownShown, setSourceDropdownShown] = useState(true);
   const [destDropdownShown, setDestDropdownShown] = useState(true);
   const aviablejobtypes = useAviableJobTypes();
+  const [type, setType] = useState();
 
   return error ? (
     <>Oh no, there was an error</>
@@ -138,10 +139,6 @@ export const AddJob = ({ addJob }) => {
           </tr>
         </tbody>
       </table>
-      <label>
-        Start time
-        <input type="time" onChange={(e) => setStartTime(e.target.value)} />
-      </label>
       {source && (
         <ConfigureUtility
           utility={source}

@@ -56,6 +56,7 @@ export const api = createApi({
         method: "POST",
         body: task,
       }),
+      invalidatesTags: (result, error, arg) => ["Task"],
     }),
     getTaskList: builder.query({
       query: (m_id) => ({

@@ -20,7 +20,7 @@ export const CreateTask = () => {
     setJobs([...jobs, job]);
   };
   const submitTask = () => {
-    console.log({ name, jobs });
+    // console.log({ name, jobs });
     createTask({ m_id, task: { name, jobs } });
   };
   return (
@@ -33,7 +33,7 @@ export const CreateTask = () => {
       <div className={styles.JobUtilContainer}>
         <div>
           {jobs.length > 0 && <JobList jobs={jobs} edit={true} />}
-          <AddJob addJob={addJob} />
+          <AddJob addJob={addJob} jobs={jobs} />
         </div>
       </div>
       <button onClick={() => submitTask()}>submit Task</button>

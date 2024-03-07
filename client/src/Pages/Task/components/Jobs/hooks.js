@@ -4,7 +4,7 @@ import { useUtilities } from "../../../Utility/hooks";
 // in the future there will be possibilites to do so via app
 export const useAviableJobTypes = () => {
   const { data, error, isLoading } = useUtilities();
-  const newAviaJobArr = [];
+  const newAviaJobArr = ["wait"];
   data &&
     data.utilities.filter(
       (x) =>

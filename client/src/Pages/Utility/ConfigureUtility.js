@@ -12,6 +12,8 @@ export const ConfigureUtility = ({ utility, utilUpdate }) => {
     setUtility({ ...updatedUtility, ...newdata[0] });
   };
   const update = (name, newVal) => {
+    console.log(options);
+    console.log(newVal);
     setOptions(
       options.map((op) => {
         return op.name === name ? { ...op, set: newVal } : op;
@@ -48,16 +50,23 @@ export const ConfigureUtility = ({ utility, utilUpdate }) => {
             <div>
               {option.name}
               <div>
-                {option.values.map((val, index) => (
-                  <button
-                    onClick={() => update(option.name, index)}
-                    style={{
-                      backgroundColor: index === option.set && "magenta",
-                    }}
-                  >
-                    {val}
-                  </button>
-                ))}
+                {option.values.map((val, index) =>
+                  !isNaN(val) ? (
+                    <input
+                      type="number"
+                      onChange={(e) => update(option.name, e.target.value)}
+                    ></input>
+                  ) : (
+                    <button
+                      onClick={() => update(option.name, index)}
+                      style={{
+                        backgroundColor: index === option.set && "magenta",
+                      }}
+                    >
+                      {val}
+                    </button>
+                  )
+                )}
               </div>
             </div>
           ))}
