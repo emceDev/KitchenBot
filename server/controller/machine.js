@@ -26,7 +26,7 @@ export const getMachine = asyncHandler(async (req, res) => {
     //res.json('machine')
     console.log("loaded machine");
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.json("machine saving process failed:");
     throw Error({ "machine saving process failed:": err });
   }

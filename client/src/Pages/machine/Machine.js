@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import {
   useCreateMachineMutation,
   useGetMachineByIdQuery,
-} from "../../State/services";
+} from "../../../client/src/State/services";
 import { NavLink, Outlet, useParams } from "react-router-dom";
 import styles from "./Machine.module.scss";
-import { useUtilities } from "../Utility/hooks";
+import { useUtilities } from "../../../client/src/Pages/Utility/hooks";
 const xm_id = "64eb29f108d0b25211afc486";
 export const Machine = () => {
   return (
     <div>
-      {/* <CreateMachine /> */}
-      <GetMachine />
+      <CreateMachine />
+      {/* <GetMachine /> */}
       {/* <CreateUtility /> */}
     </div>
   );

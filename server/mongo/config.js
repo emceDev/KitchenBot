@@ -1,6 +1,6 @@
 import { mongoose } from "mongoose";
 
-const uri = "mongodb://127.0.0.1:27017/testdb";
+const uri = "mongodb://127.0.0.1:27017/Robots";
 
 export const client = async () => {
   try {
