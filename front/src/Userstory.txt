@@ -50,8 +50,14 @@ Receipe details:
 
 
 routes:
+    Machine: Button Register containers, Receipe list, Button AddReceipe
     register containers
     add receipe
     configure receipe
     receipe list
     start receipe
+configure receipe:
+    after finish display message suceed! or smthing <== implement to user messages (smthing like alert or smthin)
+    redirect user back to receipe list
+Should I implement stop start in the details of the receipe? - yes
+    after pressing start client subscribes to node js job statuses

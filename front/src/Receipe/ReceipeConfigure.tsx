@@ -3,14 +3,9 @@ import {
   useConfigureReceipeMutation,
   useGetReceipeDetailsQuery,
   useGetRegisteredContainersQuery,
-  useReceipeConfigureMutation,
-  useUpdateReceipeMutation,
 } from "../state/apiSlice";
 import { useState, useEffect } from "react";
-import {
-  ContainerItem,
-  ContainersListEdit,
-} from "./components/containerComponents/ContainerComponents";
+import { ContainerItem } from "./components/containerComponents/ContainerComponents";
 import { Container, Job, Receipe } from "../types/ReceipeTypes";
 
 export const ReceipeConfigure = () => {

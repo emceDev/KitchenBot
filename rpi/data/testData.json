@@ -1,2014 +1,1678 @@
 {
-  "_id": {
-    "$oid": "65ec315dcb3afbae1a035da2"
-  },
+  "_id": "65ec315dcb3afbae1a035da2",
   "name": "Maszyna2",
   "password": "password",
   "number": "M02",
   "receipes": [
-    {
-      "name": "test45 pasus 999",
-      "status": "created",
-      "jobs": [
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C01",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Makaron",
-              "weight": 100
-            },
-            "_id": {
-              "$oid": "65f1d1527faf02ced8d3b711"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": 4,
-              "test": "test_string"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f309159a7441f779f4f9fd"
-            }
-          },
-          "_id": {
-            "$oid": "65f309159a7441f779f4f9fb"
-          }
-        },
-        {
-          "jobType": "pause",
-          "options": {
-            "duration": "9999",
-            "description": "casual pause"
-          },
-          "_id": {
-            "$oid": "65f309159a7441f779f4f9fe"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f309159a7441f779f4fa00"
-            }
-          },
-          "options": {
-            "power": 2,
-            "test": "test_string2"
-          },
-          "_id": {
-            "$oid": "65f309159a7441f779f4f9ff"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": 4,
-              "test": "test_string"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f309159a7441f779f4fa02"
-            }
-          },
-          "options": {
-            "speed": 2,
-            "duration": 20,
-            "textOption": "some text"
-          },
-          "_id": {
-            "$oid": "65f309159a7441f779f4fa01"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C02",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Mięso mielone",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db10d094f31093cd04fe"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": 4,
-              "test": "test_string"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f309159a7441f779f4fa03"
-            }
-          },
-          "_id": {
-            "$oid": "65f310f2cd647aa6ec94fd6d"
-          }
-        }
-      ],
-      "stoves": [
-        {
-          "name": "palnik1",
-          "type": "stove",
-          "options": {
-            "power": 4,
-            "test": "test_string"
-          },
-          "position": 4,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S01",
-          "_id": {
-            "$oid": "65f309159a7441f779f4fa03"
-          }
-        },
-        {
-          "name": "palnik2",
-          "type": "stove",
-          "options": {
-            "power": 2,
-            "test": "test_string2"
-          },
-          "position": 3,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S02",
-          "_id": {
-            "$oid": "65f309159a7441f779f4fa04"
-          }
-        }
-      ],
-      "containers": [
-        {
-          "number": "C01",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Makaron",
-            "weight": 100
-          },
-          "_id": {
-            "$oid": "65f1d1527faf02ced8d3b711"
-          }
-        },
-        {
-          "number": "C02",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Mięso mielone",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db10d094f31093cd04fe"
-          }
-        },
-        {
-          "number": "Passata",
-          "type": "container",
-          "contents": {
-            "contentsType": "Liquid",
-            "name": "C03",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db2bd094f31093cd0506"
-          }
-        },
-        {
-          "number": "C04",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Przyprawy",
-            "weight": 10
-          },
-          "_id": {
-            "$oid": "65f1db7ad094f31093cd0510"
-          }
-        },
-        {
-          "number": "x",
-          "type": "container",
-          "contents": {
-            "contentsType": "x",
-            "name": "x",
-            "weight": 1
-          },
-          "_id": {
-            "$oid": "65f308acf18a4f79bf33de09"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "65f309159a7441f779f4f9fa"
+      {
+          "name": "test45 pasus 999",
+          "status": "created",
+          "jobs": [
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Makaron",
+                          "weight": 100
+                      },
+                      "number": "C01",
+                      "type": "container",
+                      "_id": "65f1d1527faf02ced8d3b711"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": 4,
+                          "test": "test_string"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f309159a7441f779f4f9fd"
+                  },
+                  "_id": "65f309159a7441f779f4f9fb"
+              },
+              {
+                  "jobType": "pause",
+                  "options": {
+                      "duration": "9999",
+                      "description": "casual pause"
+                  },
+                  "_id": "65f309159a7441f779f4f9fe"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f309159a7441f779f4fa00"
+                  },
+                  "options": {
+                      "power": 2,
+                      "test": "test_string2"
+                  },
+                  "_id": "65f309159a7441f779f4f9ff"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": 4,
+                          "test": "test_string"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f309159a7441f779f4fa02"
+                  },
+                  "options": {
+                      "speed": 2,
+                      "duration": 20,
+                      "textOption": "some text"
+                  },
+                  "_id": "65f309159a7441f779f4fa01"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Mięso mielone",
+                          "weight": 500
+                      },
+                      "number": "C02",
+                      "type": "container",
+                      "_id": "65f1db10d094f31093cd04fe"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": 4,
+                          "test": "test_string"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f309159a7441f779f4fa03"
+                  },
+                  "_id": "65f310f2cd647aa6ec94fd6d"
+              }
+          ],
+          "stoves": [
+              {
+                  "name": "palnik1",
+                  "type": "stove",
+                  "options": {
+                      "power": 4,
+                      "test": "test_string"
+                  },
+                  "position": 4,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S01",
+                  "_id": "65f309159a7441f779f4fa03"
+              },
+              {
+                  "name": "palnik2",
+                  "type": "stove",
+                  "options": {
+                      "power": 2,
+                      "test": "test_string2"
+                  },
+                  "position": 3,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S02",
+                  "_id": "65f309159a7441f779f4fa04"
+              }
+          ],
+          "containers": [
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Makaron",
+                      "weight": 100
+                  },
+                  "number": "C01",
+                  "type": "container",
+                  "_id": "65f1d1527faf02ced8d3b711"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Mięso mielone",
+                      "weight": 500
+                  },
+                  "number": "C02",
+                  "type": "container",
+                  "_id": "65f1db10d094f31093cd04fe"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Liquid",
+                      "name": "C03",
+                      "weight": 500
+                  },
+                  "number": "Passata",
+                  "type": "container",
+                  "_id": "65f1db2bd094f31093cd0506"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Przyprawy",
+                      "weight": 10
+                  },
+                  "number": "C04",
+                  "type": "container",
+                  "_id": "65f1db7ad094f31093cd0510"
+              },
+              {
+                  "contents": {
+                      "contentsType": "x",
+                      "name": "x",
+                      "weight": 1
+                  },
+                  "number": "x",
+                  "type": "container",
+                  "_id": "65f308acf18a4f79bf33de09"
+              },
+              {
+                  "contents": {
+                      "contentsType": "solid",
+                      "name": "Kiełba ",
+                      "weight": 1999
+                  },
+                  "number": "C0111",
+                  "type": "container",
+                  "_id": "65f3279193d802f8da3ca5e0"
+              }
+          ],
+          "_id": "65f309159a7441f779f4f9fa"
+      },
+      {
+          "name": "Makaron z kiełbą",
+          "status": "configured",
+          "jobs": [
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Makaron",
+                          "weight": 100
+                      },
+                      "number": "C01",
+                      "type": "container",
+                      "_id": "65f1d1527faf02ced8d3b711"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": 4,
+                          "test": "test_string"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f327a293d802f8da3ca600"
+                  },
+                  "_id": "65f327a293d802f8da3ca5fe"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "41",
+                          "test": "test_string"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f327a293d802f8da3ca602"
+                  },
+                  "options": {
+                      "power": "41",
+                      "test": "test_string"
+                  },
+                  "_id": "65f327a293d802f8da3ca601"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Mięso mielone",
+                          "weight": 500
+                      },
+                      "number": "C02",
+                      "type": "container",
+                      "_id": "65f1db10d094f31093cd04fe"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f327a293d802f8da3ca605"
+                  },
+                  "_id": "65f327a293d802f8da3ca603"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "41",
+                          "test": "test_string"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f327a293d802f8da3ca607"
+                  },
+                  "options": {
+                      "speed": 2,
+                      "duration": 20,
+                      "textOption": "some text"
+                  },
+                  "_id": "65f327a293d802f8da3ca606"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": "222",
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f327a293d802f8da3ca609"
+                  },
+                  "options": {
+                      "power": "222",
+                      "test": "test_string2"
+                  },
+                  "_id": "65f327a293d802f8da3ca608"
+              }
+          ],
+          "stoves": [
+              {
+                  "name": "palnik1",
+                  "type": "stove",
+                  "options": {
+                      "power": "41",
+                      "test": "test_string"
+                  },
+                  "position": 4,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S01",
+                  "_id": "65f327a293d802f8da3ca60a"
+              },
+              {
+                  "name": "palnik2",
+                  "type": "stove",
+                  "options": {
+                      "power": "222",
+                      "test": "test_string2"
+                  },
+                  "position": 3,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S02",
+                  "_id": "65f327a293d802f8da3ca60b"
+              }
+          ],
+          "containers": [
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Makaron",
+                      "weight": 100
+                  },
+                  "number": "C01",
+                  "type": "container",
+                  "_id": "65f1d1527faf02ced8d3b711"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Mięso mielone",
+                      "weight": 500
+                  },
+                  "number": "C02",
+                  "type": "container",
+                  "_id": "65f1db10d094f31093cd04fe"
+              }
+          ],
+          "_id": "65f327a293d802f8da3ca5fd"
+      },
+      {
+          "name": "Spagetti",
+          "status": "configured",
+          "jobs": [
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40a78216e49cbd250a69c"
+                  },
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "_id": "65f40a78216e49cbd250a69b"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Mięso mielone",
+                          "weight": 500
+                      },
+                      "number": "C02",
+                      "type": "container",
+                      "_id": "65f1db10d094f31093cd04fe"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40a78216e49cbd250a69f"
+                  },
+                  "_id": "65f40a78216e49cbd250a69d"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Przyprawy",
+                          "weight": 10
+                      },
+                      "number": "C04",
+                      "type": "container",
+                      "_id": "65f1db7ad094f31093cd0510"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40a78216e49cbd250a6a2"
+                  },
+                  "_id": "65f40a78216e49cbd250a6a0"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Liquid",
+                          "name": "C03",
+                          "weight": 500
+                      },
+                      "number": "Passata",
+                      "type": "container",
+                      "_id": "65f1db2bd094f31093cd0506"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40a78216e49cbd250a6a5"
+                  },
+                  "_id": "65f40a78216e49cbd250a6a3"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40a78216e49cbd250a6a7"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "60",
+                      "textOption": "Mięszanie na patelni"
+                  },
+                  "_id": "65f40a78216e49cbd250a6a6"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": "5",
+                          "test": "powolne podgrzewanie (duszenie)"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40a78216e49cbd250a6a9"
+                  },
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "_id": "65f40a78216e49cbd250a6a8"
+              },
+              {
+                  "jobType": "pause",
+                  "options": {
+                      "duration": 300,
+                      "description": "casual pause"
+                  },
+                  "_id": "65f40a78216e49cbd250a6aa"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Makaron",
+                          "weight": 100
+                      },
+                      "number": "C01",
+                      "type": "container",
+                      "_id": "65f1d1527faf02ced8d3b711"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40a78216e49cbd250a6ad"
+                  },
+                  "_id": "65f40a78216e49cbd250a6ab"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40a78216e49cbd250a6af"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "30",
+                      "textOption": "mięszanie makaronu"
+                  },
+                  "_id": "65f40a78216e49cbd250a6ae"
+              }
+          ],
+          "stoves": [
+              {
+                  "name": "palnik1",
+                  "type": "stove",
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "position": 4,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S01",
+                  "_id": "65f40a78216e49cbd250a6b0"
+              },
+              {
+                  "name": "palnik2",
+                  "type": "stove",
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "position": 3,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S02",
+                  "_id": "65f40a78216e49cbd250a6b1"
+              }
+          ],
+          "containers": [
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Mięso mielone",
+                      "weight": 500
+                  },
+                  "number": "C02",
+                  "type": "container",
+                  "_id": "65f1db10d094f31093cd04fe"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Przyprawy",
+                      "weight": 10
+                  },
+                  "number": "C04",
+                  "type": "container",
+                  "_id": "65f1db7ad094f31093cd0510"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Liquid",
+                      "name": "C03",
+                      "weight": 500
+                  },
+                  "number": "Passata",
+                  "type": "container",
+                  "_id": "65f1db2bd094f31093cd0506"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Makaron",
+                      "weight": 100
+                  },
+                  "number": "C01",
+                  "type": "container",
+                  "_id": "65f1d1527faf02ced8d3b711"
+              }
+          ],
+          "_id": "65f40a78216e49cbd250a69a"
+      },
+      {
+          "name": "Spagetti",
+          "status": "created",
+          "jobs": [
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40d304771fafeef47dc0b"
+                  },
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "_id": "65f40d304771fafeef47dc0a"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Mięso mielone",
+                          "weight": 500
+                      },
+                      "number": "C02",
+                      "type": "container",
+                      "_id": "65f1db10d094f31093cd04fe"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40d304771fafeef47dc0e"
+                  },
+                  "_id": "65f40d304771fafeef47dc0c"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Przyprawy",
+                          "weight": 10
+                      },
+                      "number": "C04",
+                      "type": "container",
+                      "_id": "65f1db7ad094f31093cd0510"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40d304771fafeef47dc11"
+                  },
+                  "_id": "65f40d304771fafeef47dc0f"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Liquid",
+                          "name": "C03",
+                          "weight": 500
+                      },
+                      "number": "Passata",
+                      "type": "container",
+                      "_id": "65f1db2bd094f31093cd0506"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40d304771fafeef47dc14"
+                  },
+                  "_id": "65f40d304771fafeef47dc12"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40d304771fafeef47dc16"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "60",
+                      "textOption": "Mięszanie na patelni"
+                  },
+                  "_id": "65f40d304771fafeef47dc15"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": "5",
+                          "test": "powolne podgrzewanie (duszenie)"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40d304771fafeef47dc18"
+                  },
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "_id": "65f40d304771fafeef47dc17"
+              },
+              {
+                  "jobType": "pause",
+                  "options": {
+                      "duration": 300,
+                      "description": "casual pause"
+                  },
+                  "_id": "65f40d304771fafeef47dc19"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Makaron",
+                          "weight": 100
+                      },
+                      "number": "C01",
+                      "type": "container",
+                      "_id": "65f1d1527faf02ced8d3b711"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40d304771fafeef47dc1c"
+                  },
+                  "_id": "65f40d304771fafeef47dc1a"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40d304771fafeef47dc1e"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "30",
+                      "textOption": "mięszanie makaronu"
+                  },
+                  "_id": "65f40d304771fafeef47dc1d"
+              }
+          ],
+          "stoves": [
+              {
+                  "name": "palnik1",
+                  "type": "stove",
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "position": 4,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S01",
+                  "_id": "65f40d304771fafeef47dc1f"
+              },
+              {
+                  "name": "palnik2",
+                  "type": "stove",
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "position": 3,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S02",
+                  "_id": "65f40d304771fafeef47dc20"
+              }
+          ],
+          "containers": [
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Makaron",
+                      "weight": 100
+                  },
+                  "number": "C01",
+                  "type": "container",
+                  "_id": "65f1d1527faf02ced8d3b711"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Mięso mielone",
+                      "weight": 500
+                  },
+                  "number": "C02",
+                  "type": "container",
+                  "_id": "65f1db10d094f31093cd04fe"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Liquid",
+                      "name": "C03",
+                      "weight": 500
+                  },
+                  "number": "Passata",
+                  "type": "container",
+                  "_id": "65f1db2bd094f31093cd0506"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Przyprawy",
+                      "weight": 10
+                  },
+                  "number": "C04",
+                  "type": "container",
+                  "_id": "65f1db7ad094f31093cd0510"
+              },
+              {
+                  "contents": {
+                      "contentsType": "x",
+                      "name": "x",
+                      "weight": 1
+                  },
+                  "number": "x",
+                  "type": "container",
+                  "_id": "65f308acf18a4f79bf33de09"
+              },
+              {
+                  "contents": {
+                      "contentsType": "solid",
+                      "name": "Kiełba ",
+                      "weight": 1999
+                  },
+                  "number": "C0111",
+                  "type": "container",
+                  "_id": "65f3279193d802f8da3ca5e0"
+              }
+          ],
+          "_id": "65f40d304771fafeef47dc09"
+      },
+      {
+          "name": "Spagetti",
+          "status": "created",
+          "jobs": [
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40e6139fece7d691ee50e"
+                  },
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "_id": "65f40e6139fece7d691ee50d"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Mięso mielone",
+                          "weight": 500
+                      },
+                      "number": "C02",
+                      "type": "container",
+                      "_id": "65f1db10d094f31093cd04fe"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e6139fece7d691ee511"
+                  },
+                  "_id": "65f40e6139fece7d691ee50f"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Przyprawy",
+                          "weight": 10
+                      },
+                      "number": "C04",
+                      "type": "container",
+                      "_id": "65f1db7ad094f31093cd0510"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e6139fece7d691ee514"
+                  },
+                  "_id": "65f40e6139fece7d691ee512"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Liquid",
+                          "name": "C03",
+                          "weight": 500
+                      },
+                      "number": "Passata",
+                      "type": "container",
+                      "_id": "65f1db2bd094f31093cd0506"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e6139fece7d691ee517"
+                  },
+                  "_id": "65f40e6139fece7d691ee515"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e6139fece7d691ee519"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "60",
+                      "textOption": "Mięszanie na patelni"
+                  },
+                  "_id": "65f40e6139fece7d691ee518"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": "5",
+                          "test": "powolne podgrzewanie (duszenie)"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e6139fece7d691ee51b"
+                  },
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "_id": "65f40e6139fece7d691ee51a"
+              },
+              {
+                  "jobType": "pause",
+                  "options": {
+                      "duration": 300,
+                      "description": "casual pause"
+                  },
+                  "_id": "65f40e6139fece7d691ee51c"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Makaron",
+                          "weight": 100
+                      },
+                      "number": "C01",
+                      "type": "container",
+                      "_id": "65f1d1527faf02ced8d3b711"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40e6139fece7d691ee51f"
+                  },
+                  "_id": "65f40e6139fece7d691ee51d"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40e6139fece7d691ee521"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "30",
+                      "textOption": "mięszanie makaronu"
+                  },
+                  "_id": "65f40e6139fece7d691ee520"
+              }
+          ],
+          "stoves": [
+              {
+                  "name": "palnik1",
+                  "type": "stove",
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "position": 4,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S01",
+                  "_id": "65f40e6139fece7d691ee522"
+              },
+              {
+                  "name": "palnik2",
+                  "type": "stove",
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "position": 3,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S02",
+                  "_id": "65f40e6139fece7d691ee523"
+              }
+          ],
+          "containers": [
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Makaron",
+                      "weight": 100
+                  },
+                  "number": "C01",
+                  "type": "container",
+                  "_id": "65f1d1527faf02ced8d3b711"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Mięso mielone",
+                      "weight": 500
+                  },
+                  "number": "C02",
+                  "type": "container",
+                  "_id": "65f1db10d094f31093cd04fe"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Liquid",
+                      "name": "C03",
+                      "weight": 500
+                  },
+                  "number": "Passata",
+                  "type": "container",
+                  "_id": "65f1db2bd094f31093cd0506"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Przyprawy",
+                      "weight": 10
+                  },
+                  "number": "C04",
+                  "type": "container",
+                  "_id": "65f1db7ad094f31093cd0510"
+              },
+              {
+                  "contents": {
+                      "contentsType": "x",
+                      "name": "x",
+                      "weight": 1
+                  },
+                  "number": "x",
+                  "type": "container",
+                  "_id": "65f308acf18a4f79bf33de09"
+              },
+              {
+                  "contents": {
+                      "contentsType": "solid",
+                      "name": "Kiełba ",
+                      "weight": 1999
+                  },
+                  "number": "C0111",
+                  "type": "container",
+                  "_id": "65f3279193d802f8da3ca5e0"
+              }
+          ],
+          "_id": "65f40e6139fece7d691ee50c"
+      },
+      {
+          "name": "Spagetti2",
+          "status": "created",
+          "jobs": [
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40e94b6ad20b73b0983c8"
+                  },
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983c7"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Przyprawy",
+                          "weight": 10
+                      },
+                      "number": "C04",
+                      "type": "container",
+                      "_id": "65f1db7ad094f31093cd0510"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e94b6ad20b73b0983cb"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983c9"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Mięso mielone",
+                          "weight": 500
+                      },
+                      "number": "C02",
+                      "type": "container",
+                      "_id": "65f1db10d094f31093cd04fe"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e94b6ad20b73b0983ce"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983cc"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Liquid",
+                          "name": "C03",
+                          "weight": 500
+                      },
+                      "number": "Passata",
+                      "type": "container",
+                      "_id": "65f1db2bd094f31093cd0506"
+                  },
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e94b6ad20b73b0983d1"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983cf"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": 2,
+                          "test": "test_string2"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e94b6ad20b73b0983d3"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "60",
+                      "textOption": "Mięszanie na patelni"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983d2"
+              },
+              {
+                  "jobType": "adjust",
+                  "stove": {
+                      "name": "palnik2",
+                      "type": "stove",
+                      "options": {
+                          "power": "5",
+                          "test": "powolne podgrzewanie (duszenie)"
+                      },
+                      "position": 3,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S02",
+                      "_id": "65f40e94b6ad20b73b0983d5"
+                  },
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983d4"
+              },
+              {
+                  "jobType": "pause",
+                  "options": {
+                      "duration": 300,
+                      "description": "casual pause"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983d6"
+              },
+              {
+                  "jobType": "add",
+                  "container": {
+                      "contents": {
+                          "contentsType": "Solid",
+                          "name": "Makaron",
+                          "weight": 100
+                      },
+                      "number": "C01",
+                      "type": "container",
+                      "_id": "65f1d1527faf02ced8d3b711"
+                  },
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40e94b6ad20b73b0983d9"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983d7"
+              },
+              {
+                  "jobType": "mix",
+                  "stove": {
+                      "name": "palnik1",
+                      "type": "stove",
+                      "options": {
+                          "power": "10",
+                          "test": "podgraznie wody na makaron"
+                      },
+                      "position": 4,
+                      "isIgnited": false,
+                      "ignitionTimes": [],
+                      "isOccupied": false,
+                      "number": "S01",
+                      "_id": "65f40e94b6ad20b73b0983db"
+                  },
+                  "options": {
+                      "speed": "1",
+                      "duration": "30",
+                      "textOption": "mięszanie makaronu"
+                  },
+                  "_id": "65f40e94b6ad20b73b0983da"
+              }
+          ],
+          "stoves": [
+              {
+                  "name": "palnik1",
+                  "type": "stove",
+                  "options": {
+                      "power": "10",
+                      "test": "podgraznie wody na makaron"
+                  },
+                  "position": 4,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S01",
+                  "_id": "65f40e94b6ad20b73b0983dc"
+              },
+              {
+                  "name": "palnik2",
+                  "type": "stove",
+                  "options": {
+                      "power": "5",
+                      "test": "powolne podgrzewanie (duszenie)"
+                  },
+                  "position": 3,
+                  "isIgnited": false,
+                  "ignitionTimes": [],
+                  "isOccupied": false,
+                  "number": "S02",
+                  "_id": "65f40e94b6ad20b73b0983dd"
+              }
+          ],
+          "containers": [
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Makaron",
+                      "weight": 100
+                  },
+                  "number": "C01",
+                  "type": "container",
+                  "_id": "65f1d1527faf02ced8d3b711"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Mięso mielone",
+                      "weight": 500
+                  },
+                  "number": "C02",
+                  "type": "container",
+                  "_id": "65f1db10d094f31093cd04fe"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Liquid",
+                      "name": "C03",
+                      "weight": 500
+                  },
+                  "number": "Passata",
+                  "type": "container",
+                  "_id": "65f1db2bd094f31093cd0506"
+              },
+              {
+                  "contents": {
+                      "contentsType": "Solid",
+                      "name": "Przyprawy",
+                      "weight": 10
+                  },
+                  "number": "C04",
+                  "type": "container",
+                  "_id": "65f1db7ad094f31093cd0510"
+              },
+              {
+                  "contents": {
+                      "contentsType": "x",
+                      "name": "x",
+                      "weight": 1
+                  },
+                  "number": "x",
+                  "type": "container",
+                  "_id": "65f308acf18a4f79bf33de09"
+              },
+              {
+                  "contents": {
+                      "contentsType": "solid",
+                      "name": "Kiełba ",
+                      "weight": 1999
+                  },
+                  "number": "C0111",
+                  "type": "container",
+                  "_id": "65f3279193d802f8da3ca5e0"
+              }
+          ],
+          "_id": "65f40e94b6ad20b73b0983c6"
       }
-    },
-    {
-      "name": "Makaron z kiełbą",
-      "status": "configured",
-      "jobs": [
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C01",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Makaron",
-              "weight": 100
-            },
-            "_id": {
-              "$oid": "65f1d1527faf02ced8d3b711"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": 4,
-              "test": "test_string"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f327a293d802f8da3ca600"
-            }
-          },
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca5fe"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "41",
-              "test": "test_string"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f327a293d802f8da3ca602"
-            }
-          },
-          "options": {
-            "power": "41",
-            "test": "test_string"
-          },
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca601"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C02",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Mięso mielone",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db10d094f31093cd04fe"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f327a293d802f8da3ca605"
-            }
-          },
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca603"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "41",
-              "test": "test_string"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f327a293d802f8da3ca607"
-            }
-          },
-          "options": {
-            "speed": 2,
-            "duration": 20,
-            "textOption": "some text"
-          },
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca606"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": "222",
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f327a293d802f8da3ca609"
-            }
-          },
-          "options": {
-            "power": "222",
-            "test": "test_string2"
-          },
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca608"
-          }
-        }
-      ],
-      "stoves": [
-        {
-          "name": "palnik1",
-          "type": "stove",
-          "options": {
-            "power": "41",
-            "test": "test_string"
-          },
-          "position": 4,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S01",
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca60a"
-          }
-        },
-        {
-          "name": "palnik2",
-          "type": "stove",
-          "options": {
-            "power": "222",
-            "test": "test_string2"
-          },
-          "position": 3,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S02",
-          "_id": {
-            "$oid": "65f327a293d802f8da3ca60b"
-          }
-        }
-      ],
-      "containers": [
-        {
-          "number": "C01",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Makaron",
-            "weight": 100
-          },
-          "_id": {
-            "$oid": "65f1d1527faf02ced8d3b711"
-          }
-        },
-        {
-          "number": "C02",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Mięso mielone",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db10d094f31093cd04fe"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "65f327a293d802f8da3ca5fd"
-      }
-    },
-    {
-      "name": "Spagetti",
-      "status": "created",
-      "jobs": [
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a69c"
-            }
-          },
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a69b"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C02",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Mięso mielone",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db10d094f31093cd04fe"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a69f"
-            }
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a69d"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C04",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Przyprawy",
-              "weight": 10
-            },
-            "_id": {
-              "$oid": "65f1db7ad094f31093cd0510"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a6a2"
-            }
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6a0"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "Passata",
-            "type": "container",
-            "contents": {
-              "contentsType": "Liquid",
-              "name": "C03",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db2bd094f31093cd0506"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a6a5"
-            }
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6a3"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a6a7"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "60",
-            "textOption": "Mięszanie na patelni"
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6a6"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": "5",
-              "test": "powolne podgrzewanie (duszenie)"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a6a9"
-            }
-          },
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6a8"
-          }
-        },
-        {
-          "jobType": "pause",
-          "options": {
-            "duration": 300,
-            "description": "casual pause"
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6aa"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C01",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Makaron",
-              "weight": 100
-            },
-            "_id": {
-              "$oid": "65f1d1527faf02ced8d3b711"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a6ad"
-            }
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6ab"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40a78216e49cbd250a6af"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "30",
-            "textOption": "mięszanie makaronu"
-          },
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6ae"
-          }
-        }
-      ],
-      "stoves": [
-        {
-          "name": "palnik1",
-          "type": "stove",
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "position": 4,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S01",
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6b0"
-          }
-        },
-        {
-          "name": "palnik2",
-          "type": "stove",
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "position": 3,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S02",
-          "_id": {
-            "$oid": "65f40a78216e49cbd250a6b1"
-          }
-        }
-      ],
-      "containers": [
-        {
-          "number": "C01",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Makaron",
-            "weight": 100
-          },
-          "_id": {
-            "$oid": "65f1d1527faf02ced8d3b711"
-          }
-        },
-        {
-          "number": "C02",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Mięso mielone",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db10d094f31093cd04fe"
-          }
-        },
-        {
-          "number": "Passata",
-          "type": "container",
-          "contents": {
-            "contentsType": "Liquid",
-            "name": "C03",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db2bd094f31093cd0506"
-          }
-        },
-        {
-          "number": "C04",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Przyprawy",
-            "weight": 10
-          },
-          "_id": {
-            "$oid": "65f1db7ad094f31093cd0510"
-          }
-        },
-        {
-          "number": "x",
-          "type": "container",
-          "contents": {
-            "contentsType": "x",
-            "name": "x",
-            "weight": 1
-          },
-          "_id": {
-            "$oid": "65f308acf18a4f79bf33de09"
-          }
-        },
-        {
-          "number": "C0111",
-          "type": "container",
-          "contents": {
-            "contentsType": "solid",
-            "name": "Kiełba ",
-            "weight": 1999
-          },
-          "_id": {
-            "$oid": "65f3279193d802f8da3ca5e0"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "65f40a78216e49cbd250a69a"
-      }
-    },
-    {
-      "name": "Spagetti",
-      "status": "created",
-      "jobs": [
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc0b"
-            }
-          },
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc0a"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C02",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Mięso mielone",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db10d094f31093cd04fe"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc0e"
-            }
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc0c"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C04",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Przyprawy",
-              "weight": 10
-            },
-            "_id": {
-              "$oid": "65f1db7ad094f31093cd0510"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc11"
-            }
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc0f"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "Passata",
-            "type": "container",
-            "contents": {
-              "contentsType": "Liquid",
-              "name": "C03",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db2bd094f31093cd0506"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc14"
-            }
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc12"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc16"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "60",
-            "textOption": "Mięszanie na patelni"
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc15"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": "5",
-              "test": "powolne podgrzewanie (duszenie)"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc18"
-            }
-          },
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc17"
-          }
-        },
-        {
-          "jobType": "pause",
-          "options": {
-            "duration": 300,
-            "description": "casual pause"
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc19"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C01",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Makaron",
-              "weight": 100
-            },
-            "_id": {
-              "$oid": "65f1d1527faf02ced8d3b711"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc1c"
-            }
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc1a"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40d304771fafeef47dc1e"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "30",
-            "textOption": "mięszanie makaronu"
-          },
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc1d"
-          }
-        }
-      ],
-      "stoves": [
-        {
-          "name": "palnik1",
-          "type": "stove",
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "position": 4,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S01",
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc1f"
-          }
-        },
-        {
-          "name": "palnik2",
-          "type": "stove",
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "position": 3,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S02",
-          "_id": {
-            "$oid": "65f40d304771fafeef47dc20"
-          }
-        }
-      ],
-      "containers": [
-        {
-          "number": "C01",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Makaron",
-            "weight": 100
-          },
-          "_id": {
-            "$oid": "65f1d1527faf02ced8d3b711"
-          }
-        },
-        {
-          "number": "C02",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Mięso mielone",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db10d094f31093cd04fe"
-          }
-        },
-        {
-          "number": "Passata",
-          "type": "container",
-          "contents": {
-            "contentsType": "Liquid",
-            "name": "C03",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db2bd094f31093cd0506"
-          }
-        },
-        {
-          "number": "C04",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Przyprawy",
-            "weight": 10
-          },
-          "_id": {
-            "$oid": "65f1db7ad094f31093cd0510"
-          }
-        },
-        {
-          "number": "x",
-          "type": "container",
-          "contents": {
-            "contentsType": "x",
-            "name": "x",
-            "weight": 1
-          },
-          "_id": {
-            "$oid": "65f308acf18a4f79bf33de09"
-          }
-        },
-        {
-          "number": "C0111",
-          "type": "container",
-          "contents": {
-            "contentsType": "solid",
-            "name": "Kiełba ",
-            "weight": 1999
-          },
-          "_id": {
-            "$oid": "65f3279193d802f8da3ca5e0"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "65f40d304771fafeef47dc09"
-      }
-    },
-    {
-      "name": "Spagetti",
-      "status": "created",
-      "jobs": [
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee50e"
-            }
-          },
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee50d"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C02",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Mięso mielone",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db10d094f31093cd04fe"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee511"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee50f"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C04",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Przyprawy",
-              "weight": 10
-            },
-            "_id": {
-              "$oid": "65f1db7ad094f31093cd0510"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee514"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee512"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "Passata",
-            "type": "container",
-            "contents": {
-              "contentsType": "Liquid",
-              "name": "C03",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db2bd094f31093cd0506"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee517"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee515"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee519"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "60",
-            "textOption": "Mięszanie na patelni"
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee518"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": "5",
-              "test": "powolne podgrzewanie (duszenie)"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee51b"
-            }
-          },
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee51a"
-          }
-        },
-        {
-          "jobType": "pause",
-          "options": {
-            "duration": 300,
-            "description": "casual pause"
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee51c"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C01",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Makaron",
-              "weight": 100
-            },
-            "_id": {
-              "$oid": "65f1d1527faf02ced8d3b711"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee51f"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee51d"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40e6139fece7d691ee521"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "30",
-            "textOption": "mięszanie makaronu"
-          },
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee520"
-          }
-        }
-      ],
-      "stoves": [
-        {
-          "name": "palnik1",
-          "type": "stove",
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "position": 4,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S01",
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee522"
-          }
-        },
-        {
-          "name": "palnik2",
-          "type": "stove",
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "position": 3,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S02",
-          "_id": {
-            "$oid": "65f40e6139fece7d691ee523"
-          }
-        }
-      ],
-      "containers": [
-        {
-          "number": "C01",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Makaron",
-            "weight": 100
-          },
-          "_id": {
-            "$oid": "65f1d1527faf02ced8d3b711"
-          }
-        },
-        {
-          "number": "C02",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Mięso mielone",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db10d094f31093cd04fe"
-          }
-        },
-        {
-          "number": "Passata",
-          "type": "container",
-          "contents": {
-            "contentsType": "Liquid",
-            "name": "C03",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db2bd094f31093cd0506"
-          }
-        },
-        {
-          "number": "C04",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Przyprawy",
-            "weight": 10
-          },
-          "_id": {
-            "$oid": "65f1db7ad094f31093cd0510"
-          }
-        },
-        {
-          "number": "x",
-          "type": "container",
-          "contents": {
-            "contentsType": "x",
-            "name": "x",
-            "weight": 1
-          },
-          "_id": {
-            "$oid": "65f308acf18a4f79bf33de09"
-          }
-        },
-        {
-          "number": "C0111",
-          "type": "container",
-          "contents": {
-            "contentsType": "solid",
-            "name": "Kiełba ",
-            "weight": 1999
-          },
-          "_id": {
-            "$oid": "65f3279193d802f8da3ca5e0"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "65f40e6139fece7d691ee50c"
-      }
-    },
-    {
-      "name": "Spagetti2",
-      "status": "created",
-      "jobs": [
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983c8"
-            }
-          },
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983c7"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C04",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Przyprawy",
-              "weight": 10
-            },
-            "_id": {
-              "$oid": "65f1db7ad094f31093cd0510"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983cb"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983c9"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C02",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Mięso mielone",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db10d094f31093cd04fe"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983ce"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983cc"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "Passata",
-            "type": "container",
-            "contents": {
-              "contentsType": "Liquid",
-              "name": "C03",
-              "weight": 500
-            },
-            "_id": {
-              "$oid": "65f1db2bd094f31093cd0506"
-            }
-          },
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983d1"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983cf"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": 2,
-              "test": "test_string2"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983d3"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "60",
-            "textOption": "Mięszanie na patelni"
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983d2"
-          }
-        },
-        {
-          "jobType": "adjust",
-          "stove": {
-            "name": "palnik2",
-            "type": "stove",
-            "options": {
-              "power": "5",
-              "test": "powolne podgrzewanie (duszenie)"
-            },
-            "position": 3,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S02",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983d5"
-            }
-          },
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983d4"
-          }
-        },
-        {
-          "jobType": "pause",
-          "options": {
-            "duration": 300,
-            "description": "casual pause"
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983d6"
-          }
-        },
-        {
-          "jobType": "add",
-          "container": {
-            "number": "C01",
-            "type": "container",
-            "contents": {
-              "contentsType": "Solid",
-              "name": "Makaron",
-              "weight": 100
-            },
-            "_id": {
-              "$oid": "65f1d1527faf02ced8d3b711"
-            }
-          },
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983d9"
-            }
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983d7"
-          }
-        },
-        {
-          "jobType": "mix",
-          "stove": {
-            "name": "palnik1",
-            "type": "stove",
-            "options": {
-              "power": "10",
-              "test": "podgraznie wody na makaron"
-            },
-            "position": 4,
-            "isIgnited": false,
-            "ignitionTimes": [],
-            "isOccupied": false,
-            "number": "S01",
-            "_id": {
-              "$oid": "65f40e94b6ad20b73b0983db"
-            }
-          },
-          "options": {
-            "speed": "1",
-            "duration": "30",
-            "textOption": "mięszanie makaronu"
-          },
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983da"
-          }
-        }
-      ],
-      "stoves": [
-        {
-          "name": "palnik1",
-          "type": "stove",
-          "options": {
-            "power": "10",
-            "test": "podgraznie wody na makaron"
-          },
-          "position": 4,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S01",
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983dc"
-          }
-        },
-        {
-          "name": "palnik2",
-          "type": "stove",
-          "options": {
-            "power": "5",
-            "test": "powolne podgrzewanie (duszenie)"
-          },
-          "position": 3,
-          "isIgnited": false,
-          "ignitionTimes": [],
-          "isOccupied": false,
-          "number": "S02",
-          "_id": {
-            "$oid": "65f40e94b6ad20b73b0983dd"
-          }
-        }
-      ],
-      "containers": [
-        {
-          "number": "C01",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Makaron",
-            "weight": 100
-          },
-          "_id": {
-            "$oid": "65f1d1527faf02ced8d3b711"
-          }
-        },
-        {
-          "number": "C02",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Mięso mielone",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db10d094f31093cd04fe"
-          }
-        },
-        {
-          "number": "Passata",
-          "type": "container",
-          "contents": {
-            "contentsType": "Liquid",
-            "name": "C03",
-            "weight": 500
-          },
-          "_id": {
-            "$oid": "65f1db2bd094f31093cd0506"
-          }
-        },
-        {
-          "number": "C04",
-          "type": "container",
-          "contents": {
-            "contentsType": "Solid",
-            "name": "Przyprawy",
-            "weight": 10
-          },
-          "_id": {
-            "$oid": "65f1db7ad094f31093cd0510"
-          }
-        },
-        {
-          "number": "x",
-          "type": "container",
-          "contents": {
-            "contentsType": "x",
-            "name": "x",
-            "weight": 1
-          },
-          "_id": {
-            "$oid": "65f308acf18a4f79bf33de09"
-          }
-        },
-        {
-          "number": "C0111",
-          "type": "container",
-          "contents": {
-            "contentsType": "solid",
-            "name": "Kiełba ",
-            "weight": 1999
-          },
-          "_id": {
-            "$oid": "65f3279193d802f8da3ca5e0"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "65f40e94b6ad20b73b0983c6"
-      }
-    }
   ],
   "tools": [],
-  "__v": 49,
+  "__v": 53,
   "registeredContainers": [
-    {
-      "number": "C01",
-      "type": "container",
-      "contents": {
-        "contentsType": "Solid",
-        "name": "Makaron",
-        "weight": 100
+      {
+          "contents": {
+              "contentsType": "Solid",
+              "name": "Makaron",
+              "weight": 100
+          },
+          "number": "C01",
+          "type": "container",
+          "_id": "65f1d1527faf02ced8d3b711"
       },
-      "_id": {
-        "$oid": "65f1d1527faf02ced8d3b711"
-      }
-    },
-    {
-      "number": "C02",
-      "type": "container",
-      "contents": {
-        "contentsType": "Solid",
-        "name": "Mięso mielone",
-        "weight": 500
+      {
+          "contents": {
+              "contentsType": "Solid",
+              "name": "Mięso mielone",
+              "weight": 500
+          },
+          "number": "C02",
+          "type": "container",
+          "_id": "65f1db10d094f31093cd04fe"
       },
-      "_id": {
-        "$oid": "65f1db10d094f31093cd04fe"
-      }
-    },
-    {
-      "number": "Passata",
-      "type": "container",
-      "contents": {
-        "contentsType": "Liquid",
-        "name": "C03",
-        "weight": 500
+      {
+          "contents": {
+              "contentsType": "Liquid",
+              "name": "C03",
+              "weight": 500
+          },
+          "number": "Passata",
+          "type": "container",
+          "_id": "65f1db2bd094f31093cd0506"
       },
-      "_id": {
-        "$oid": "65f1db2bd094f31093cd0506"
-      }
-    },
-    {
-      "number": "C04",
-      "type": "container",
-      "contents": {
-        "contentsType": "Solid",
-        "name": "Przyprawy",
-        "weight": 10
+      {
+          "contents": {
+              "contentsType": "Solid",
+              "name": "Przyprawy",
+              "weight": 10
+          },
+          "number": "C04",
+          "type": "container",
+          "_id": "65f1db7ad094f31093cd0510"
       },
-      "_id": {
-        "$oid": "65f1db7ad094f31093cd0510"
-      }
-    },
-    {
-      "number": "x",
-      "type": "container",
-      "contents": {
-        "contentsType": "x",
-        "name": "x",
-        "weight": 1
+      {
+          "contents": {
+              "contentsType": "x",
+              "name": "x",
+              "weight": 1
+          },
+          "number": "x",
+          "type": "container",
+          "_id": "65f308acf18a4f79bf33de09"
       },
-      "_id": {
-        "$oid": "65f308acf18a4f79bf33de09"
+      {
+          "contents": {
+              "contentsType": "solid",
+              "name": "Kiełba ",
+              "weight": 1999
+          },
+          "number": "C0111",
+          "type": "container",
+          "_id": "65f3279193d802f8da3ca5e0"
       }
-    },
-    {
-      "number": "C0111",
-      "type": "container",
-      "contents": {
-        "contentsType": "solid",
-        "name": "Kiełba ",
-        "weight": 1999
-      },
-      "_id": {
-        "$oid": "65f3279193d802f8da3ca5e0"
-      }
-    }
   ]
 }

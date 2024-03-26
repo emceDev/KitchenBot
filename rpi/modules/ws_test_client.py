@@ -3,7 +3,7 @@ import websockets
 import random
 import string
 from data_handler import load_data
-data=load_data('../data/testData.json')
+data=load_data()
 utilities = data['utilities']
 
 

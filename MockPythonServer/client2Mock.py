@@ -10,13 +10,13 @@ utility_data_1 = {
     "version": "G0.1",
     "number": "grabber0"
 }
-server_url ="ws://192.168.43.17:80/"
-# server_url= "ws://localhost:8080/"
+# server_url ="ws://192.168.43.17:80/"
+server_url= "ws://localhost:8080/"
 
 class Utility:
-    def __init__(self, mac_address, job_types, position, status, version, number):
+    def __init__(self, mac_address, jobTypes, position, status, version, number):
         self.mac_address = mac_address
-        self.job_types = job_types
+        self.jobTypes = jobTypes
         self.position = position
         self.status = status
         self.version = version
@@ -26,7 +26,7 @@ class Utility:
     async def send(self, code, data=None):
         utility={ "identifier": self.number,
             "mac_address": self.mac_address,
-            "job_types": self.job_types,
+            "jobTypes": self.jobTypes,
             "position": self.position,
             "status": self.status,
             "version": self.version}
@@ -69,6 +69,7 @@ class Utility:
                 else:
                     message = await self.websocket.recv()
                     message= json.loads(message)
+                    print('received message')
                     print(message['code'])
                     # print(f"Received message: {message}")
                     match message['code']:
@@ -87,7 +88,7 @@ class Utility:
 async def initialize_clients():
     utility = Utility(
         mac_address="02",
-        job_types=["add", "mix"],
+        jobTypes=["add", "mix"],
         position=1,
         status="idle",
         version="G0.2",
