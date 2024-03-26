@@ -47,3 +47,11 @@ Edit receipe:
     same as add receipe
 Receipe details:
     buttons are removed, just display receipe
+
+
+routes:
+    register containers
+    add receipe
+    configure receipe
+    receipe list
+    start receipe

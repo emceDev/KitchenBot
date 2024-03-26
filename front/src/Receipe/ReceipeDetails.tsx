@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { JobListItem, JobListItemDetails } from "./components/JobListItem";
 import { useGetReceipeDetailsQuery } from "../state/apiSlice";
 import { useEffect, useState } from "react";
@@ -31,6 +31,10 @@ export const ReceipeDetails = ({}) => {
               key={job.jobType + index}
             />
           ))}
+
+        <Link to={`edit`}>
+          <button>Edit</button>
+        </Link>
       </div>
     );
   }

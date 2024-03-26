@@ -1,0 +1,70 @@
+A0 => 'idle'
+#sending job
+['AJR':'received job',
+'AS2':'running checks for utilities',
+'A2E':'utilities not found',
+'A2S':'utilities found',
+'AJP':'performing job',
+'AJE':'error during job',
+'A3S':'job succesfully performed']
+
+#
+'RI0':'initialize',
+'RNJ':'new job',
+'RJ1':'stop job',
+'RC1':'reset utilities',
+'RC2':'switch to manual steering',
+
+
+
+
+
+
+1. get task from server
+2. initiate it
+3. listen for orders from server (force stop, force start, skip job, reset, manualset)
+4. listen for signals from arduino (error, status)
+5. send data to server (status)
+6. send data to arduino (force stop etc. [reaction on server data])
+
+
+example:
+
+1. get task from server2
+2. R send job to arduino (status:RJ0,job:job)
+    -no connection
+2.1 A runs checks for errors
+2.2 A reports errors or success
+2.2 error
+    A stops
+    R signals and waits for S orders
+2.2 success
+    R waits for A signals
+2.3 A Job start
+    A execute job task(add, mix)
+    A signal(moving tool from x to y current_pos)
+    A error()
+        A stop
+        A report R error_code
+        A wait for R order (reset job, new job)
+        R report S error wait for S order
+        R pass S order to A
+    A finished
+        A stop
+        A report R job_finished_code
+        A wait instructions
+        R sends status to S 
+        R sends A next instructions
+
+Approach #2 - allows for the rpi to have more controll which allows for ESPs route planning...
+
+1. Task('add',container,stove)
+    1.1 task === 'add':{ R=>A go(pos),pick(),go(pos),open(),close(),go(pos)}
+    1.1 task === 'mix':{R=> go(pos),pick(),go(pos),mix(),go(pos)}
+    
+
+wsmessage:{
+    number: who sends
+    code: one of the codes
+    data: optional
+}

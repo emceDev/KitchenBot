@@ -1,75 +1,40 @@
-from modules.data_handler import Machine,Task,load_data
-# get user input of machine name and password
-machine_name='machine'
-machine_pass='pass'
-# machine=Machine(machine_name,machine_pass) - po co to wgle??
-#fetch the machine =>implement fetch logic
-machine_get=load_data('./data/testData.json')
-machine=Machine(machine_get['name'],machine_get['password'])
+# cannot start websocket server with this... some socket pool error.
+import wifi
+import socketpool
+import ipaddress
 
-for task in machine_get['tasks']:
-    machine.add_task(task["_id"],task)
+# Set access point credentials
+ap_ssid = "NoBajcyklesInBejzyn"
+ap_password = "wajfajwaj"
+m_id="65ec315dcb3afbae1a035da2"
+getMachineUrl = "machine/${m_id}"
+wifi.radio.connect(ap_ssid, ap_password)
 
-for utility in machine_get['utilities']:
-    machine.add_utility(utility["_id"],utility)
+print("Connetcted with SSID: {}, password: {}".format(ap_ssid, ap_password))
+print("My IP address is", str(wifi.radio.ipv4_address))
+print("connected?",str(wifi.radio.connected))
+# Create a socket pool
+pool = socketpool.SocketPool(wifi.radio)
 
-currently_run_tasks=['65dca024e6d147d2d5de196e','65041c4f5b805c9bbbcf9716']
+# Create a simple HTTP server function
+def simple_http_server():
+    server_socket = pool.socket()
+    server_socket.bind((str(wifi.radio.ipv4_address), 80))
+    server_socket.listen(1)
 
-jobs_schedule={}
+    print("Server is listening on {}:80".format(wifi.radio.ipv4_address))
+    
+    # fetch data from server
+    # 
+    while True:
+        print("Waiting for a connection...")
+        client_socket, client_address = server_socket.accept()
+        print("Accepted connection from:", client_address)
 
-print('compiling the schedule')
-for task_id in currently_run_tasks:
-    # print(machine.get_task_by_id(task_id).name)
-    task=machine.get_task_by_id(task_id)
-    job_ids=list(task.jobs.keys())
-    for job_id in job_ids:
-        job_data=machine.get_job_by_task_id(task_id,job_id)
-        jobs_schedule[job_id]=job_data
-print('schedule completed')
-print()
+        client_socket.send("HTTP/1.0 200 OK\r\nContent-Type: text/html\r\n\r\n")
+        client_socket.send("<html>Hello, World!</html>\r\n")
+        client_socket.close()
 
-#establish websockets with utilities
-print('establishing ws with utilities')
-for utility_id in machine.utilities:
-    utility= machine.get_utility_by_id(utility_id)
-    if utility:
-        utility.connect()
-print('connection established')
-
-# get all jobs from schedule 
-print('starting to send jobs')
-for job in jobs_schedule.values():
-    utilities=job.get_utilities()
-    # check status of utilities of this job
-    for utility in utilities:
-        utility_id = utility["_id"]
-        utility= machine.get_utility_by_id(utility_id)
-        if utility:
-            if utility.status=="in use":
-                #pass job to corresponding utilities
-                utility.dispatch(job)
-print('schedule empty')
-print()
-
-
-# print(job_list[0])
-#list of jobs from currently run tasks in a timely manner
-#TODO add time to mongodbModel
-
-# extract all jobs from tasks and put them to jobs_schedule array 
-# map jobs_schedule
-    #set status sending to utility
-    #is_util_free = check if utility is in use
-    #false->wait for utility to free (check if can do other jobs)
-    #true
-    #send command to utility(source)
-    #set job status sent, set utility status busy
-    #wait for finish and check if can do other jobs
-
-#actively listen to utilites reporting
-    #message:
-    #type: error,status,
-    #status error(...)
-    #status report: update(utility status, utility_sensors)
-    #status finished: update(utility status, job status,delete from schedule)
+# Start the HTTP server
+simple_http_server()
 

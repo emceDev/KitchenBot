@@ -1,14 +1,10 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useGetReceipeListQuery } from "../state/apiSlice";
-import { Job, Receipe, Container } from "../types/ReceipeTypes";
+import { Receipe } from "../types/ReceipeTypes";
 
-import { useState } from "react";
 export const ReceipeList = () => {
   const { m_id } = useParams();
   const receipesRes = useGetReceipeListQuery({ m_id });
-  // const handleStart = (_id) => {
-  //   //receipe status !configured => redirect to configure receipe
-  // };
   if (receipesRes.isLoading) {
     return <div>Loading receipes...</div>;
   } else if (receipesRes.error) {
@@ -21,11 +17,22 @@ export const ReceipeList = () => {
         {receipes.map((receipe: Receipe) => (
           <div key={receipe._id}>
             {receipe.name}. {receipe.status}
-            <button>Start</button>
+            {receipe.status === "configured" ? (
+              <button>Start</button>
+            ) : (
+              <Link to={`receipe/${receipe._id}/configure`}>
+                <button>Configure</button>
+              </Link>
+            )}
             <button>Pause</button>
-            <button>Details</button>
+            <Link to={`receipe/${receipe._id}`}>
+              <button>Details</button>
+            </Link>
           </div>
         ))}
+        <Link to="receipe/create">
+          <button>Add Receipe</button>
+        </Link>
       </div>
     );
   }

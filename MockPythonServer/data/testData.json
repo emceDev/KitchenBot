@@ -2,6 +2,75 @@
   "_id": {
     "$oid": "65ec315dcb3afbae1a035da2"
   },
+  "utilities": [
+    {
+      "macAddress": "01",
+      "jobTypes": ["add", "mix"],
+      "position": 0,
+      "status": "none",
+      "version": "G0.1",
+      "number": "grabber0"
+    },
+    {
+      "macAddress": "02",
+      "jobTypes": ["add", "mix"],
+      "position": 0,
+      "status": "none",
+      "version": "G0.1",
+      "number": "grabber1"
+    },
+    {
+      "macAddress": "03",
+      "jobTypes": ["scan"],
+      "position": 0,
+      "status": "none",
+      "version": "S0.1",
+      "number": "grabber3"
+    }
+  ],
+  "tools": [
+    {
+      "jobTypes": ["mix"],
+      "position": 0,
+      "status": "none",
+      "version": "Mixer0.1",
+      "number": "mixer0"
+    }
+  ],
+  "stoves": [
+    {
+      "name": "palnik1",
+      "type": "stove",
+      "options": {
+        "power": "41",
+        "test": "test_string"
+      },
+      "position": 4,
+      "isIgnited": false,
+      "ignitionTimes": [],
+      "isOccupied": false,
+      "number": "S01",
+      "_id": {
+        "$oid": "65f327a293d802f8da3ca60a"
+      }
+    },
+    {
+      "name": "palnik2",
+      "type": "stove",
+      "options": {
+        "power": "222",
+        "test": "test_string2"
+      },
+      "position": 3,
+      "isIgnited": false,
+      "ignitionTimes": [],
+      "isOccupied": false,
+      "number": "S02",
+      "_id": {
+        "$oid": "65f327a293d802f8da3ca60b"
+      }
+    }
+  ],
   "name": "Maszyna2",
   "password": "password",
   "number": "M02",
@@ -1935,7 +2004,6 @@
       }
     }
   ],
-  "tools": [],
   "__v": 49,
   "registeredContainers": [
     {

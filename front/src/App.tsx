@@ -9,6 +9,7 @@ import { ReceipeDetails } from "./Receipe/ReceipeDetails";
 import { ReceipeEdit } from "./Receipe/ReceipeEdit";
 import { ReceipeList } from "./Receipe/ReceipeList";
 import { ReceipeConfigure } from "./Receipe/ReceipeConfigure";
+import { MachineMain } from "./Machine/MachineMain";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/Machine/:m_id/" element={<Machine />}>
+              <Route path="" element={<MachineMain />} />
               <Route
                 path="registerContainers/"
                 element={<ContainerManager />}
